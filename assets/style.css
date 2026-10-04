@@ -1,0 +1,204 @@
+/* Pitch Deck Dark Palette & Modern UI Theme for Commodity Derivatives Intelligence */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap');
+
+/* Apply custom body font selectively to text elements without overriding icon fonts */
+html, body, p, h1, h2, h3, h4, h5, h6, label, button, input, textarea, select {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Ensure Material Symbols icon font is NOT overridden */
+[data-testid="stIconMaterial"], 
+.material-symbols-rounded, 
+.material-icons,
+[class*="material-symbols"] {
+    font-family: 'Material Symbols Rounded', 'Material Icons' !important;
+}
+
+/* Main App Container Background */
+[data-testid="stAppViewContainer"] {
+    background-color: #0F1B2D !important;
+    color: #F5F1E8 !important;
+}
+
+/* Sidebar styling */
+[data-testid="stSidebar"] {
+    background-color: #1B2A41 !important;
+    border-right: 1px solid #2A3E5C !important;
+}
+
+[data-testid="stSidebarNav"] {
+    padding-top: 10px;
+}
+
+/* Sidebar nav items */
+[data-testid="stSidebarNav"] a span {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #E2E8F0;
+}
+
+/* Header bar */
+[data-testid="stHeader"] {
+    background-color: rgba(15, 27, 45, 0.9) !important;
+}
+
+/* Card Containers & Border Wrappers */
+[data-testid="stVerticalBlockBorderWrapper"] {
+    background-color: #1B2A41 !important;
+    border: 1px solid #2A3E5C !important;
+    border-radius: 12px !important;
+    padding: 16px !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25) !important;
+    margin-bottom: 16px !important;
+}
+
+/* Metric Tiles */
+[data-testid="stMetric"] {
+    background-color: #162438 !important;
+    border: 1px solid #2A3E5C !important;
+    border-radius: 10px !important;
+    padding: 14px 18px !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) !important;
+}
+
+[data-testid="stMetricLabel"] {
+    font-size: 0.8rem !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.6px !important;
+    color: #94A3B8 !important;
+    font-weight: 600 !important;
+}
+
+[data-testid="stMetricValue"] {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 1.7rem !important;
+    font-weight: 700 !important;
+    color: #E8A317 !important;
+}
+
+/* Hero Header Banner */
+.hero-banner {
+    background: linear-gradient(135deg, #1B2A41 0%, #0F1B2D 100%);
+    border: 1px solid #2A3E5C;
+    border-left: 6px solid #E8A317;
+    border-radius: 12px;
+    padding: 24px 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.hero-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.1rem;
+    font-weight: 800;
+    color: #F5F1E8;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    font-size: 1.05rem;
+    color: #94A3B8;
+    margin-top: 6px;
+    margin-bottom: 0;
+}
+
+/* Verdict Cards */
+.verdict-box {
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin: 20px 0;
+    border: 1px solid #2A3E5C;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.3);
+}
+
+.verdict-box-green {
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.15) 0%, #1B2A41 100%);
+    border-left: 6px solid #10B981;
+}
+
+.verdict-box-amber {
+    background: linear-gradient(135deg, rgba(245, 158, 11, 0.15) 0%, #1B2A41 100%);
+    border-left: 6px solid #F59E0B;
+}
+
+.verdict-box-red {
+    background: linear-gradient(135deg, rgba(239, 68, 68, 0.15) 0%, #1B2A41 100%);
+    border-left: 6px solid #EF4444;
+}
+
+.verdict-title-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.verdict-reason-text {
+    font-size: 0.95rem;
+    color: #CBD5E1;
+    line-height: 1.5;
+}
+
+/* Status Badges */
+.status-pill-demo {
+    display: inline-block;
+    background-color: rgba(239, 68, 68, 0.2);
+    color: #F87171;
+    border: 1px solid #EF4444;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+}
+
+.status-pill-live {
+    display: inline-block;
+    background-color: rgba(16, 185, 129, 0.2);
+    color: #34D399;
+    border: 1px solid #10B981;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+}
+
+/* Explainer Box */
+.explainer-box {
+    background-color: #162438;
+    border-left: 4px solid #E8A317;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin: 16px 0;
+    color: #F5F1E8;
+    font-size: 0.92rem;
+    line-height: 1.6;
+}
+
+/* Chart Captions */
+.chart-caption-text {
+    font-size: 0.85rem;
+    color: #94A3B8;
+    font-style: italic;
+    margin-top: -6px;
+    margin-bottom: 12px;
+}
+
+/* Buttons */
+.stButton > button {
+    background: linear-gradient(135deg, #E8A317 0%, #D49310 100%) !important;
+    color: #0F1B2D !important;
+    font-weight: 700 !important;
+    border: none !important;
+    border-radius: 8px !important;
+    padding: 8px 20px !important;
+    transition: all 0.2s ease !important;
+}
+
+.stButton > button:hover {
+    transform: translateY(-1px) !important;
+    box-shadow: 0 4px 12px rgba(232, 163, 23, 0.4) !important;
+}
